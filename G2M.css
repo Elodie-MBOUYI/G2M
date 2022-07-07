@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* les grands blocs */
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+}
+
+h6{
+    font-family: 'Inter', sans-serif;
+}
+
+.boxwhite{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.boxgrey{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+/* page accueil */
+
+.premier{
+    background-image:url(./images/pattern.png);
+    width: 100%;
+    height: 100vh;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+/* header  */
+
+.devis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.devis button{
+    color: white;
+    width: 110px;
+    height: 35px;
+    border: 0.1px solid white;
+    border-radius: 5px; 
+    background-color:transparent;
+}
+
+.devis a{
+    transform: translate(0px, -25px);
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+
+a:hover{
+    color: blue;
+}
+
+.menu{
+    margin-top: 30px;
+}
+.menu ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    display: inline;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+a:hover{
+    color: brown;
+}
+
+.Logo {
+    width: 150px;
+    height: 100px;
+}
+
+/*accueil  */
+
+.item {
+    transform: translate(70px, 0px);
+    width: 500px; 
+    height: 400px;
+}
+
+.imgacc{
+    width: 50% ;
+    height: 70vh;
+    margin-top: 40px;
+}
+
+.textacc{
+    padding: 0px;
+    width: 50%;
+    height: 45vh;
+    margin-left: 120px;
+}
+
+.textacc h6 {
+    color: orange;
+    font-size: 15px; 
+    font-weight: lighter;
+}
+
+.textacc h1{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.textacc p{
+    color: white;
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.textacc button{
+    width:110px ;
+    height: 5vh;
+    background-color: deeppink;
+    border: none;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    transform: translate(0px, 30px);
+    border-radius: 5px;
+}
+
+/* bloc stratégie */
+
+.imgstrategieone{
+    width: 50% ;
+    height: 90vh;
+    margin-top: 70px;
+}
+
+.imgstrategieone img{
+    transform: translate(100px, 50px);
+    width: 470px;
+    height: 380px;
+}
+
+.textstrategie{
+    width: 50% ;
+    height: 90vh;
+    margin-top: 70px;
+    padding-left: 20px;
+}
+
+.textstrategie h6{
+    color: rgb(231, 154, 12);
+    font-size: 20px;
+    margin-top: 80px;
+    font-weight: lighter;
+}
+
+.textstrategie h1{
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.textstrategie .paraph1{
+    margin: 20px;
+    transform: translate(-20px, 0px);
+}
+
+/* bloc services */
+
+.troisieme{
+    width: 100%;
+    height: 100vh;
+}
+
+.textservices{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+}
+
+.first {
+    width: 50%;
+    height: 20vh;
+    padding: 70px;
+}
+
+.first h6 {
+    font-size: 16px;
+    color: orange;
+    font-weight: 400;
+}
+
+
+.first h1 {
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.second {
+    width: 50%;
+    height: 20vh;
+    padding: 65px;
+}
+
+.second h6 {
+    font-size: 19px;
+    color: black;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.services{
+    width: 97%;
+    height: 70vh;
+    display: flex;
+    justify-content:space-around;
+    padding: 20px;
+}
+
+.three{
+    width: 25%;
+    height: 65vh;
+    background-color: white;
+    display: flex;
+}
+
+.three:hover{
+    background-color: white;
+    box-shadow: 0px 24px 48px;
+    border-radius: 16px;
+}
+
+.four {
+    width: 25%;
+    height: 65vh;
+    background-color: white;
+    display: flex;
+}
+
+.four:hover{
+    background-color: white;
+    box-shadow: 0px 24px 48px;
+    border-radius: 16px;
+}
+
+.five{
+    width: 25%;
+    height: 65vh;
+    background-color: white;
+    display: flex;
+}
+
+.five:hover{
+    background-color: white;
+    box-shadow: 0px 24px 48px;
+    border-radius: 16px;
+}
+
+.circlethree{
+    display: flex;
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+    border: orange 6px solid;
+    margin-top: 80px;
+    margin-left: 60px;
+    flex-direction: column;
+}
+
+.circlethree p{
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 90px);
+}
+
+.p1{
+    width:200px;
+    height: 70vh;
+    transform: translate(0px, 105px);
+}
+
+.anay{
+    width:50px ;
+    height: 50px;
+    transform: translate(35px, 26px);
+}
+
+.circlefour{
+    display: flex;
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+    border: purple 6px solid;
+    margin-top: 80px;
+    margin-left: 60px;
+    flex-direction: column;
+}
+
+.circlefour p{
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 90px);
+}
+
+.plan{
+    width:68px ;
+    height: 68px;
+    transform: translate(20px, 20px);
+}
+
+.circlefive{
+    display: flex;
+    height: 110px;
+    width: 110px;
+    border-radius: 100%;
+    border: skyblue 6px solid;
+    margin-top: 80px;
+    margin-left: 60px;
+    flex-direction: column;
+}
+
+.circlefive p{
+    color: black;
+    font-weight: bold;
+    transform: translate(0px, 90px);
+}
+
+.web{
+    height: 50px;
+    transform: translate(30px, 28px)
+}
+
+/* Others services */
+
+.quatrieme h6{
+    color: orange;
+    font-size: 16px;
+    font-weight: 400;
+    transform: translate(30px, 0px);
+    width: 500px;
+    height: 20px;
+    padding: 30px;
+}
+
+.traffic{
+    width: 90%;
+    height: 35vh;
+    transform: translate(30px, 0px);
+    display: flex;
+}
+
+.trafficun{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: blue solid 3px;
+    transform: translate(20px, 10px)
+}
+
+.trafficun img{
+    transform: translate(20px, 20px);
+}
+
+.texttrafficun p{
+    transform: translate(40px, 10px);
+    width: 200px;
+}
+
+.texttrafficun h6{
+    transform: translate(10px,13px);
+    width: 30px;
+    height: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.trafficdeux{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: orange solid 3px;
+    transform: translate(225px, 10px)
+}
+
+.trafficdeux img{
+    transform: translate(20px, 20px);
+}
+
+.texttrafficdeux p{
+    transform: translate(250px, 15px);
+    width: 200px;
+}
+
+.texttrafficdeux h6{
+    transform: translate(220px,15px);
+    width: 30px;
+    height: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.traffictrois{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: purple solid 3px;
+    transform: translate(370px, 10px)
+}
+
+.traffictrois img{
+    transform: translate(20px, 20px);
+}
+
+.texttraffictrois p{
+    transform: translate(390px, 20px);
+    width: 200px;
+}
+
+.texttraffictrois h6{
+    transform: translate(360px,18px);
+    width: 30px;
+    height: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.clients{
+    width: 90%;
+    height: 35vh;
+    transform: translate(30px, 0px);
+    display: flex;
+}
+
+.clientsun{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: blue solid 3px;
+    transform: translate(20px, 25px)
+}
+
+.clientsun img{
+    transform: translate(20px, 20px);
+}
+
+.textclientsun p{
+    transform: translate(40px, 40px);
+    width: 200px;
+}
+
+.textclientsun h6{
+    transform: translate(10px,40px);
+    width: 30px;
+    height: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+
+.clientsdeux{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: blue solid 3px;
+    transform: translate(230px, 30px)
+}
+
+.clientsdeux img{
+    transform: translate(20px, 20px);
+}
+
+.textclientsdeux p{
+    transform: translate(250px, 35px);
+    width: 200px;
+}
+
+.textclientsdeux h6{
+    transform: translate(220px,40px);
+    width: 30px;
+    height: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+
+.clientstrois{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: orange solid 3px;
+    transform: translate(370px, 30px)
+}
+
+.clientstrois img{
+    transform: translate(20px, 20px);
+}
+
+.textclientstrois p{
+    transform: translate(390px, 40px);
+    width: 200px;
+}
+
+.textclientstrois h6{
+    transform: translate(360px,40px);
+    width: 30px;
+    height: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+@media screen  and (min-width:601px ){
+
+    .paraph2{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    
+    .premier{
+        background-image:url(./images/pattern.png);
+        width: 100vw;
+        height: 100vh;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .accueil{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    header{
+        width: 100vw;
+        height:10vh ;
+    }
+    
+    .menu{
+        display: none;
+    }
+
+    .devis button{
+        display: none;
+    }
+
+    .Logo {
+        width: 100px;
+        height: 60px;
+        margin-right: 135px;
+    }
+
+    .devis a{
+        transform: translate(-50px, -10px);
+        font-size: 12px;
+    }
+
+    .item{
+        width:290px ;
+        height: 35vh;
+        transform: translate(65px, -10px);
+    }
+
+
+    .textacc{
+        transform: translate(-60px, -250px);
+        width: 100%;
+        height: 40vh;
+    }
+
+    .textacc h6{
+            font-size: 12px;
+    }
+
+    .textacc h1{
+        font-size: 20px;
+    }
+
+    .textacc p{
+        font-size: 12px ;
+    }
+
+    /* media strategie */
+
+    .deuxieme{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgstrategieone img{
+        width: 370px;
+        height: 270px;
+        transform: translate(-0px, 0px);
+    }
+
+    .textstrategie h6{
+        transform: translate(0px, -137px);
+        font-size: 28px;
+        font-weight: lighter;
+        padding: 15px;
+    }
+
+    .textstrategie h1{
+        font-size: 40px;
+        transform: translate(0px, -160px);
+        padding: 15px;
+    }
+
+    .textstrategie{
+        width: 100%;
+        height: 90vh;
+        transform: translate(-20px, 0px);
+    }
+
+    .paraph1 {
+        display: none;
+    }
+
+    .paraph2{
+        width: 95%;
+        height: 20vh;
+        transform: translate(15px, -135px);
+    }
+
+    .paraph2 p{
+        font-size: 21px;
+        margin: 10px;
+    }
+
+    /* service */
+
+    .troisieme{
+        width: 100vw;
+        height: 140vh;
+        display: flex;
+        flex-direction: column;
+        background-color: brown;
+        margin-top: 120px;
+    }
+
+    .textservices{
+        width: 80%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        transform: translate(0px, -40px);
+    }
+
+    .first{
+        width: 30%;
+        height: 15vh;
+        padding: 0px;
+        margin-top: 65px;
+    }
+
+    .first h6{
+        font-size: 12px;
+        width: 130px;
+        margin-left: 20px;
+    }
+
+    .first h1{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .second h6{
+        width: 220px;
+        font-size: 16px;
+        transform: translate(-40px, -55px);
+    }
+    .services{
+        width: 80%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .three{
+        width: 5%;
+        height: 50vh;
+    }
+
+    .anay{
+        width:45px ;
+        height: 45px;
+        transform: translate(20px, 19px);
+    }
+
+    .four{
+        width: 5%;
+        height: 20vh;
+    }
+
+    .five{
+        width: 5%;
+        height: 20vh;
+    }
+
+    .circlethree{
+        display: flex;
+        height: 80px;
+        width: 80px;
+        transform: translate(-43px, -50px);
+    }
+
+    .circlethree p{
+        transform: translate(0px, 60px);
+        font-size: 14px;
+    }
+    
+    .p1{
+        width:250px;
+        height: 50vh;
+        transform: translate(0px, 60px);
+        font-size:14px ;
+    }
+
+    .circlefour{
+        display: flex;
+        height: 80px;
+        width: 80px;
+        transform: translate(-43px, -20px);
+    }
+
+    .circlefour p{
+        transform: translate(0px, 60px);
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .plan{
+        width:50px ;
+        height: 50px;
+        transform: translate(15px, 15px);
+    }
+    
+    
+
+    
+    
+    
+
+   
+    
+
+    
+
+    
+
+    
+}
