@@ -554,6 +554,95 @@ a:hover{
     font-size: 20px;
 }
 
+/* missions */
+
+.cinquieme{
+    width: 97%;
+    height: 90vh;
+    background-color: #ECEDF3;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textmission{
+    width: 45%;
+    height: 80vh;
+}
+
+.textmission h6{
+    color: #F78A22;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 120px;
+}
+
+.textmission h1{
+    color: black;
+    font-size: 50px;
+    margin-top: 25px;
+}
+
+
+.textmission p {
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+.directeur{
+    width: 35%;
+    height: 65vh;
+    background-color: #DDDFEB;
+    border-radius: 25px;
+}
+
+.video p{
+    transform:translate(70px, 70px) ;
+    font-weight: bold;
+}
+
+.video img{
+    transform:translate(-380px, 90px) ;
+}
+
+iframe{
+ width: 400px;
+ height: 47vh;
+ border-radius: 20px;
+ transform: translate(-30px, 50px);
+}
+
+/* Projects */
+
+.sixieme{
+    width: 97%;
+    height: 90vh;
+    background-color: #ECEDF3;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.sixieme h6{
+    font-size: 19px;
+    color: #F78A22;
+    font-weight: 400;
+    margin-left: 130px;
+}
+
+.sixieme h1{
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    transform: translate(-300px, 40px);
+}
+
 @media screen  and (min-width:601px ){
 
     .paraph2{
@@ -748,7 +837,7 @@ a:hover{
         display: flex;
         height: 80px;
         width: 80px;
-        transform: translate(-43px, -50px);
+        transform: translate(-43px, -35px);
     }
 
     .circlethree p{
@@ -780,6 +869,17 @@ a:hover{
         width:50px ;
         height: 50px;
         transform: translate(15px, 15px);
+    }
+
+    .circlefive{
+        display: flex;
+        height: 80px;
+        width: 80px;
+        transform: translate(-43px, 90px);
+    }
+
+    .web{
+        transform: translate(15px, 1px);
     }
     
     
