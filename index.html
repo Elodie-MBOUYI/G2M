@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G2M</title>
     <link rel="stylesheet" href="G2M.css">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,12 @@
 
             <div class="devis" >
                 <button style="transform: translate(-50px, -17px);" >DEVIS</button>
-                <a href="" >Français</a>
+                <label for="langues">Langues</label>
+                <img class="translate" src="./images/translate.png" alt="">
+                <select name="lang" id="lang">
+                    <option value="1">Anglais</option>
+                    <option value="2">Francais</option>
+                </select>
             </div>
         </header>
 
@@ -38,11 +44,20 @@
                 <h1>Conseil en <br>management et <br>Stratégie</h1>
                 <p >Nous sommes une entreprise de consulting (conseil) en <br>Management dans la gestion de projets et organisation <br> des entreprises PME et TPE et mise en place des <br> Stratégies.</p>
                 <button>CONTACTEZ-NOUS</button>
+                <div class="playing"><span class="iconify" data-icon="bi:play-circle" style="color: white; width: 30px;height: 30px;transform: translate(130px, -2px);"></span></div>
+                <p class="p2">Jouer la vidéo 3:14</p>
             </div>
             <div class="imgacc">
                 <img class="item" src="./images/Item.png.png"  alt="">
             </div>
+            <div class="rez">
+                <div class="cerclerez"><span class="iconify" data-icon="ei:sc-facebook" style="color: white;width: 40px;height: 40px;transform: translate(7px, 6px);"></span></div>
+                <div class="cerclerez"><span class="iconify" data-icon="bxl:twitter" style="color: white;width: 30px;height: 30px;transform: translate(12px, 10px);"></span></div>
+                <div class="cerclerez"><span class="iconify" data-icon="ei:sc-instagram" style="color: white;width: 40px;height: 40px;transform: translate(5px, 5px);"></span></div>
+            </div>
+            
         </div>
+       
     </section>
 
         
@@ -96,21 +111,18 @@
             
             <div class="five">
                 <div class="circlefive">
-                    <img class="web" style="width: 50px;" src="./images/web (1).png" alt="">
+                    <img class="web"  src="./images/web (1).png" alt="">
                     <p >Services web marketing</p>
                     <div class="p1">Lorem ipsum dolor sit,>uam  iste, natus, omnis voluptatem, laboriosam Lorem ipsum dolor sit,>uam  iste, natus,dolor sit,>uam</div>
                 </div>
             </div>
-                    
-        
-
         </div>
     </section>
 
     <!-- Autres services -->
 
     <section class="quatrieme">
-        <h6>AUTRES  SERVICES A VALEUR AJOUTEE</h6>
+        <h6 class="title">AUTRES  SERVICES A VALEUR AJOUTEE</h6>
         <div class="traffic">
             <div class="trafficun">
                 <img src="./images/Shape (2).png" alt="">
@@ -132,8 +144,8 @@
                 <img src="./images/Combined Shape (1).png" alt="">
             </div>
             <div class="texttraffictrois">
-                <h6 style="color:black ; font-weight: bold;font-size: 20px;">Conversion</h6>
-                <p style="font-size:15px ; color: black;">Lorem ipsum dolor sit,>uam  iste, natus, <br> omnis voluptatem, laboriosam Lorem <br> ipsum dolor sit,>uam  iste,</p>
+                <h6 >Conversion</h6>
+                <p >Lorem ipsum dolor sit,>uam  iste, natus, <br> omnis voluptatem, laboriosam Lorem <br> ipsum dolor sit,>uam  iste,</p>
             </div>
     
     
@@ -144,7 +156,7 @@
                 <img src="./images/Combined Shape (2).png" alt="">
             </div>
             <div class="textclientsun">
-                <h6 >Customers</h6>
+                <h6>Customers</h6>
                 <p >Lorem ipsum dolor sit,>uam  iste, natus, <br> omnis voluptatem, laboriosam Lorem <br> ipsum dolor sit,>uam  iste,</p>
             </div>
 
@@ -153,8 +165,8 @@
             </div>
     
             <div class="textclientsdeux">
-                <h6 >Marketing</h6>
-                <p >Lorem ipsum dolor sit,>uam  iste, natus, <br> omnis voluptatem, laboriosam Lorem <br> ipsum dolor sit,>uam  iste,</p>
+                <h6>Marketing</h6>
+                <p>Lorem ipsum dolor sit, <br>>uam  iste, natus, omnis voluptatem, laboriosam <br>Lorem ipsum dolor<br> sit,>uam  iste,</p>
             </div>
 
             <div class="clientstrois">
@@ -176,7 +188,7 @@
         </div>
         <div class="directeur">
             <div class="video">
-                <iframe src="./images/video ocean.mp4" frameborder="0"></iframe>
+                <video controls src="./images/video ocean.mp4" frameborder="0"></video>
                 <img src="./images/homme-affaires.webp"  style="clip-path: circle();width: 30px;" alt="">
                 <p >MOT DU DIRECTEUR<p>
             </div>
@@ -186,10 +198,164 @@
     <!-- Projets -->
 
     <section class="sixieme">
-        <h6>CE QUE NOUS AVONS DEJA FAIT</h6>
-        <h1>Projects&Clients</h1>
+        <div class="textseo">
+            <h6>CE QUE NOUS AVONS DEJA FAIT</h6>
+            <h1>Projects&Clients</h1>
+        </div>
+
+        <div class="seo">
+            <img class="seo1" src="./images/SEO.PINKMODEL.PNG" alt="">
+            <img class="seo2" src="./images/africa.jfif" alt="">
+            <img class="seo3" src="./images/golden coin.png" alt="">
+        </div>
+
+        <div class="badges">
+            <img src="./images/badge 1.png" alt="">
+            <img src="./images/badge 2.png" alt="">
+            <img src="./images/badge 3.png" alt="">
+            <img src="./images/badge 4.png" alt="">
+        </div>
     </section>
 
-    
+    <!-- Témoignages -->
+    <section class="septieme">
+        <div class="ind">
+            <img class="ind1" src="./images/homme-affaires.webp" style="width: 580px; height: 500px; border-radius: 35px; transform: translate(0px,50px);" alt="">
+            <img class="ind2" src="./images/Rectangle.png"  alt="">
+        </div>
+        <div class="textind">
+            <h6>TEMOIGNAGES</h6>
+            <h1>Total Gabon <br>Marketing</h1>
+            <p>Lorem ipsum dolor sit,>uam  iste, natus, omnis voluptatem, laboriosam Lorem ipsum dolor sit,>uam  iste, natus, dolor sit,>uam Lorem ipsum dolor sit,>uam  iste, natus, omnis  voluptatem . laboriosam Lorem ipsum  dolor sit,>uam  iste, natus,dolor sit,>uam</p>
+        </div>
+        <div class="direction">
+            <span class="iconify" data-icon="akar-icons:circle-chevron-left" style="color: #f78a22;width: 50px;height: 50px;"></span>
+            <span class="iconify" data-icon="akar-icons:circle-chevron-right" style="color: #f78a22;width: 50px;height: 50px;"></span>
+        </div>
+
+    </section>
+
+    <!-- Abonnement -->
+    <section class="huitieme">
+        <div class="barre">
+            <div class="ab">
+                <h1>S'abonner</h1>
+                <h6>Vous pouvez vous abonnez à notre newletters et nos pages.</h6>
+                <div class="souscrire">
+                    <input type="email" placeholder="Votre email">
+                    <button><a href=""> Souscrire</a></button>
+                </div>
+            </div>
+            <div class="face">
+                <div class="reseauxun">
+                    <img class="oval" src="./images/Oval.png" alt="">
+                    <img class="flouun" src="./images/Rectangleprem.png" alt="">
+                    <img class="floudeux" src="./images/Rectangledeux.png" alt="">
+                </div>
+                <div class="reseauxdeux">
+                    <img class="in" src="./images/in.png" alt="">
+                    <img class="flouun" src="./images/Rectangleprem.png" alt="">
+                    <img class="floudeux" src="./images/Rectangledeux.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section class="neuvieme">
+        <form action="">
+            <div class="textform">
+                <h6>NOUS CONTACTER</h6>
+                <h1>Consultation gratuite</h1>
+                <p>Lorem ipsum dolor sit,>uam  iste, natus, omnis voluptatem.</p>
+            </div>
+            <div class="infos">
+                <div class="personne">
+                    <div class="infos1">
+                        <p>NOM</p>
+                        <input type="text" placeholder="Nom">
+                    </div>
+                    <div class="infos2">
+                        <p>PRENOM</p>
+                        <input type="text" placeholder="Prénom">
+                    </div>
+                </div>
+                <div class="signal">
+                    <div class="infos3">
+                        <p>EMAIL</p>
+                        <input type="email" placeholder=" Votre email">
+                    </div>
+                    <div class="infos4">
+                        <p>SERVICES</p>
+                        <select name="choix" id="choix">
+                            <option value="1">Marketting</option>
+                            <option value="2">Consultation</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="go">
+                <div class="goone">
+                    <p>MESSAGE</p>
+                    <input type="text"  >
+                </div>
+                <button><a href="">SOUMETTRE</a></button>
+            </div>
+            <div class="send">
+                <span class="iconify" data-icon="bi:send-fill" style="color: #56597a; width: 40px;height: 40px;transform: translate(25px, 25px);"></span>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footerone">
+            <div class="sous1">
+                <img src="./images/Logo_G2M.png.png" alt="">
+                <p>Lorem ipsum dolor sit,>uam  iste, natus, <br> omnis voluptatem. Lorem ipsum dolor sit,>uam  iste, natus, omnis voluptatem.</p>
+            </div>
+            <div class="sous2">
+                <h6>MENU</h6>
+                <p>A propos de nous</p>
+                <p>Projects&clients</p>
+                <p>Services</p>
+                <p>Missions</p>
+            </div>
+        
+            <div class="sous3">
+                <h6>SERVIVES</h6>
+                <p>SEO</p>
+                <p>Marketing</p>
+                <p>SMS</p>
+                <p>Optimisation</p>
+            </div>
+            <div class="sous4">
+                <div class="sous44">
+                    <div class="rondbas"><span class="iconify" data-icon="ei:sc-facebook" style="color: white;width: 40px;height: 40px;transform: translate(10px, 10px);"></span></div>
+                    <div class="rondbas"><span class="iconify" data-icon="bxl:twitter" style="color: white;width: 30px;height: 30px;transform: translate(15px, 15px);"></span></div>
+                    <div class="rondbas"><span class="iconify" data-icon="ei:sc-instagram" style="color: white;width: 40px;height: 40px;transform: translate(10px, 10px);"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footertwo">
+            <div class="ligne"></div>
+            <div class="textfin">
+                <div class="tous">
+                    <p>Copyright2021G2M.Tous droits réservés</p>
+                </div>
+                <div class="terms">
+                    <p>Terms&conditions</p>
+                    <p>Politique de confidentialité</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
 </body>
 </html>
