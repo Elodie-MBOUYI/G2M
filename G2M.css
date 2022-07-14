@@ -86,7 +86,11 @@ h6{
     color: white;
     margin-top: 20px;
 }
-
+.nwmenu{
+    color: white;
+    width: 70px;
+    height: 70px;
+}
 .translate{
     width: 30px;
     height: 30px;
@@ -441,6 +445,7 @@ a:hover{
     width: 200px;
 }
 
+
 .texttrafficun h6{
     transform: translate(10px,13px);
     width: 3px;
@@ -469,7 +474,7 @@ a:hover{
 }
 
 .texttrafficdeux h6{
-    transform: translate(0px,15px);
+    transform: translate(220px,15px);
     width: 30px;
     height: 5px;
     color: black;
@@ -689,28 +694,21 @@ video{
 }
 
 .seo{
-    width: 88%;
+    width: 75%;
     height: 65vh;
+    margin-left: 200px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    transform: translate(100px, 0px);
 }
 .seo1{
-    width: 30%;
-    height: 60vh;
+    width:450px ;
+    height:400px ;
 }
 .seo2{
-    width: 30%;
-    height: 60vh;
+    width:450px ;
+    height:400px ;
+    border: 1px solid #E02780;
     border-radius: 20px;
-    border: 1px solid #f78a;
-}
-.seo3{
-    width: 30%;
-    height: 60vh;
-    border-radius: 20px;
-    border: 1px solid #f78a;
 }
 .badges{
     width: 80%;
@@ -732,7 +730,6 @@ video{
     width: 100%;
     height: 110vh;
     display: flex;
-    
 }
 
 .ind{
@@ -749,6 +746,12 @@ video{
     border-radius: 20px;
     text-align: center;
     transform: translate(-290px, -345px);
+}
+.ind1{
+    width: 580px;
+    height: 500px;
+    border-radius: 35px;
+    transform: translate(0px,50px);
 }
 
 .textind{
@@ -1118,10 +1121,18 @@ form{
 }
 
 
-
 @media screen  and (min-width:601px ){
 
     .paraph2{
+        display: none;
+    }
+    .badgesmob{
+        display: none;
+    }
+    .nwmenu{
+        display: none;
+    }
+    .textacc .p3{
         display: none;
     }
 }
@@ -1131,7 +1142,7 @@ form{
     .premier{
         background-image:url(./images/pattern.png);
         width: 100vw;
-        height: 105vh;
+        height: 100vh;
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 0px;
     }
@@ -1160,14 +1171,26 @@ form{
         display: none;
     }
     .devis .translate{
-        transform: translate(0px, 10px);
+        transform: translate(20px, 8px);
     }
     .Logo {
-        width: 100px;
-        height: 60px;
-        transform: translate(-60px,15px);
+        width: 130px;
+        height: 70px;
+        transform: translate(-40px,15px);
     }
-    
+    .nwmenu{
+        width: 100px;
+        height: 50px;
+        transform: translate(25px, 0px);
+    }
+    .nwmenu .iconify{
+        width: 80px;
+        height: 60px;
+    }
+    .textacc .p3{
+        transform: translate(190px,-40px);
+        width: 80px;
+    }
     .devis a{
         transform: translate(-50px, -10px);
         font-size: 12px;
@@ -1175,26 +1198,35 @@ form{
 
     .item{
         width:290px ;
-        height: 35vh;
+        height: 30vh;
         transform: translate(40px, -100px);
     }
 
     .textacc{
         transform: translate(-80px, -350px);
-        width: 100%;
+        width: 250px;
         height: 40vh;
     }
 
     .textacc h6{
-            font-size: 12px;
+        font-size: 17px;
+        transform: translate(0px, -70px);
+        color: #f78a22;
+        font-weight: 300;
     }
 
     .textacc h1{
-        font-size: 20px;
+        font-size: 28px;
+        width:250px;
+        transform: translate(0px, -65px);
     }
 
     .textacc p{
         font-size: 12px ;
+        transform: translate(0px, -50px);
+    }
+    .p2{
+        display: none;
     }
 
     /* media strategie */
@@ -1215,12 +1247,14 @@ form{
         font-size: 28px;
         font-weight: 300;
         padding: 15px;
+        width: 70%;
     }
 
     .textstrategie h1{
         font-size: 40px;
         transform: translate(0px, -160px);
         padding: 15px;
+        width: 70%;
     }
 
     .textstrategie{
@@ -1234,7 +1268,7 @@ form{
     }
 
     .paraph2{
-        width: 95%;
+        width: 78%;
         height: 20vh;
         transform: translate(15px, -135px);
     }
@@ -1409,8 +1443,9 @@ form{
     }
      
     .texttrafficun p{
-        transform: translate(30px, -10px);
-        width: 150px;
+        width: 100px;
+        height: 80px;
+        transform: translate(30px, 0px);
     }
     
     .texttrafficun h6{
@@ -1419,15 +1454,15 @@ form{
         transform: translate(0px, -5px);
     }
     .trafficdeux{
-        transform: translate(15px,45px);
+        transform: translate(25px,45px);
     }
     .trafficdeux img{
         transform: translate(25px, 18px);
     }
     
     .texttrafficdeux p{
-        transform: translate(25px, 17px);
-        width: 150px;
+        transform: translate(30px, 30px);
+        width: 100px;
     }
     
     .texttrafficdeux h6{
@@ -1437,9 +1472,7 @@ form{
         font-weight: bold;
         background-color: transparent ;
         font-size: 20px;
-        z-index: 0;
-        margin-right: -110px;
-        margin-top: 15px;
+        transform: translate(0px,25px);
     }
     .traffictrois{
         width: 70px;
@@ -1454,8 +1487,8 @@ form{
     }
     
     .texttraffictrois p{
-        transform: translate(20px, 25px);
-        width: 150px;
+        transform: translate(30px, 40px);
+        width: 100px;
     }
     
     .texttraffictrois h6{
@@ -1464,8 +1497,7 @@ form{
         color: black;
         font-weight: bold;
         font-size: 20px;
-        margin-left: -367px;
-        margin-top: 25px;
+        transform: translate(-5px,40px);
     }
     
     .clients{
@@ -1480,7 +1512,7 @@ form{
         height: 70px;
         border-radius: 100%;
         border: blue solid 3px;
-        transform: translate(35px, 12px)
+        transform: translate(35px, 15px)
     }
     
     .clientsun img{
@@ -1488,12 +1520,12 @@ form{
     }
     
     .textclientsun p{
-        transform: translate(20px, -10px);
-        width: 150px;
+        transform: translate(20px, 0px);
+        width: 100px;
     }
     
     .textclientsun h6{
-        transform: translate(0px,-10px);
+        transform: translate(-12px,0px);
         width: 30px;
         height: 5px;
         color: black;
@@ -1506,7 +1538,7 @@ form{
         height: 70px;
         border-radius: 100%;
         border: blue solid 3px;
-        transform: translate(30px, 45px)
+        transform: translate(30px, 20px)
     }
     
     .clientsdeux img{
@@ -1514,12 +1546,12 @@ form{
     }
     
     .textclientsdeux p{
-        transform: translate(20px, 35px);
-        width: 200px;
+        transform: translate(20px, 0px);
+        width: 100px;
     }
     
     .textclientsdeux h6{
-        transform: translate(-10px,30px);
+        transform: translate(-10px,-2px);
         width: 30px;
         height: 5px;
         color: black;
@@ -1532,7 +1564,7 @@ form{
         height: 70px;
         border-radius: 100%;
         border: orange solid 3px;
-        transform: translate(20px, 95px)
+        transform: translate(20px, 35px)
     }
     
     .clientstrois img{
@@ -1540,12 +1572,12 @@ form{
     }
     
     .textclientstrois p{
-        transform: translate(0px, 85px);
-        width: 200px;
+        transform: translate(30px, 15px);
+        width: 100px;
     }
     
     .textclientstrois h6{
-        transform: translate(0px,77px);
+        transform: translate(0px,15px);
         width: 30px;
         height: 5px;
         color: black;
@@ -1563,7 +1595,7 @@ form{
     }
     .textmission{
         width: 60%;
-        height: 40vh;
+        height: 50vh;
         margin-right: 50px;
     }
     
@@ -1571,7 +1603,7 @@ form{
         color: #F78A22;
         font-size: 20px;
         font-weight: 400;
-        margin-top: -140px;
+        margin-top: -70px;
         margin-right: 120px;
         width: 200px;
         height: 20px;
@@ -1580,35 +1612,489 @@ form{
     .textmission h1{
         color: black;
         font-size: 30px;
-        margin-top: 25px;
+        margin-top: 20px;
+    }
+    .textmission p{
+        margin-top: 20px;
     }
     
     .directeur{
-        width: 20%;
-        height: 10vh;
+        width: 55%;
+        height: 30vh;
         background-color: #DDDFEB;
         border-radius: 25px;
+        margin-left: 25px;
     }
 
     .video p{
-        transform:translate(70px, 50px) ;
-        font-weight: bold;
+        display: none;
     }
 
     .video img{
-        transform:translate(-380px, 70px) ;
+        display: none;
     }
 
     video{
-    width: 100px;
-    height: 20vh;
+    width: 230px;
+    height: 30vh;
     border-radius: 20px;
-    transform: translate(-30px, 20px);
+    transform: translate(-82px, -30px);
     }
+    /* projects */
 
+    .sixieme{
+        width: 100vw;
+        height: 80vh;
+        margin-left: 0px;
+    }
+    .textseo{
+        width: 200px;
+        height: 100px;
+        transform: translate(10px, 0px);
+    }
+    .seo{
+        width: 75%;
+        height: 40vh;
+        margin-left: 19px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .seo1{
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .seo2{
+        display: none;
+    }
     
-
+    .sixieme h6{
+        font-size: 18px;
+        color: #F78A22;
+        font-weight: 400;
+    }
     
-
+    .sixieme h1{
+        font-size: 36px;
+        color: black;
+        height: 10vh;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+    .badges{
+        width: 80%;
+        height: 15vh;
+        transform: translate(145px, 10px);
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
     
+    .badges {
+        display: none;
+    }
+    .badgesmob{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    /* Témoignages */
+    .septieme{
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .ind{
+        width: 100vw;
+        height: 40vh;
+        transform: translate(0px, 0px);
+        text-align: center;
+    }
+    
+    .ind2{
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border-radius: 20px;
+        text-align: center;
+        transform: translate(-260px, 0px);
+    }
+    
+    .textind{
+        width: 35%;
+        height: 20vh;
+        transform: translate(150px, 95px);
+    }
+    
+    .textind h6{
+        color: #F78A22;
+        font-size: 20px;
+        font-weight: 450;
+        transform: translate(-100px, -400px);
+    }
+    
+    .textind h1{
+        color: black;
+        font-size: 45px;
+        font-weight: bold;
+        transform: translate(-110px,-110px);
+        width: 330px;
+    }
+    
+    .textind p{
+        transform: translate(-110px, -100px);
+        font-size: 20px;
+        width: 290px;
+    }
+    .direction{
+        display: none;
+    }
+    .ind1{
+        width: 240px;
+        height: 240px;
+        border-radius: 35px;
+        transform: translate(30px,70px);
+    }
+    /* abonnement */
+    .huitieme{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .barre{
+        width: 75%;
+        height: 40vh;
+        background-color: #ECEDF3;
+        border-radius: 20px;
+        margin-right: 10px;
+    }
+    
+    .ab{
+        width: 50%;
+        height: 35vh;
+        transform: translate(0px, 40px);
+    }
+    
+    .ab h1{
+        font-size: 40px;
+        transform: translate(20px, 20px);
+    }
+    .ab h6{
+        font-size: 18px;
+        font-weight: 200;
+        transform: translate(20px, 40px);
+        width: 250px;
+    }
+    
+    .ab input{
+        width: 230px;
+        height: 15px;
+        transform: translate(15px, 60px);
+        border-radius: 8px;
+        padding: 15px;
+        border: none;
+    }
+    
+    .ab button{
+        width: 250px;
+        height: 44px;
+        text-align: center;
+        transform: translate(20px, 80px);
+        border: none;
+        background-color: #f78a22;
+        border-radius: 8px;
+    }
+    
+    .ab button a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .face{
+       display: none;
+    }
+    
+    .reseauxun{
+        display: none;
+    }
+    
+    .reseauxdeux{
+       display: none;
+    }
+    /* formulaire */
+    .neuvieme{
+        background-color: #56597A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    form{
+        width: 75%;
+        height: 85%;
+        background-color: white;
+        border-radius: 25px;
+        margin-right: 30px;
+    }
+    
+    .textform{
+        width:60% ;
+        height: 15vh;
+        text-align: center;
+        transform: translate(140px, 20px);
+    }
+    
+    .textform h6{
+        color: #F78A22;
+        font-size: 17px;
+        font-weight: 400;
+        width: 180px;
+        transform: translate(-80px, 0px);
+    }
+    
+    .textform h1{
+        color: black;
+        font-size: 35px;
+        font-weight: bold;
+        transform: translate(-110px, 8px);
+        width: 230px;
+    }
+    
+    .textform p{
+        transform: translate(-100px, 15px);
+        width: 230px;
+    }
+    
+    .infos{
+        width:70% ;
+        height: 20vh;
+        text-align: center;
+        transform: translate(120px, 60px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .infos p{
+        display: none;
+    }
+    
+    .infos input{
+        width: 240px;
+        height: 25px;
+        border-radius: 9px;
+        border: gray solid 1px;
+        padding: 8px;
+        transform: translate(-100px, 0px);
+    }
+    .infos4 select{
+        width: 255px;
+        height: 43px;
+        border-radius: 9px;
+        border: gray solid 1px;
+        padding: 8px;
+        color: gray;
+        transform: translate(-100px, 0px);
+    }
+    
+    .personne{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .signal{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    .go{
+        width:70% ;
+        height: 35vh;
+        transform: translate(100px, 80px);
+    }
+    
+    .goone p{
+        display: none;
+    }
+    
+    .goone input{
+        width: 250px;
+        height: 17vh;
+        transform: translate(-80px, 110px);
+        border-radius: 9px;
+        border: gray solid 1px;
+    }
+    
+    .go button{
+        width: 130px;
+        height: 30px;
+        background-color: #E02780;
+        border: none;
+        border-radius: 7px;
+        transform: translate(-25px, 135px);
+    }
+    
+    .go button a{
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    
+    .send{
+        width: 90px;
+        height: 90px;
+        background-color: #F78A22;
+        opacity: 0.7;
+        border-radius: 100%;
+        transform: translate(765px, -350px);
+    }
+    .infos1{
+        margin-top: 30px;
+    }
+    .infos2{
+        margin-top: 20px;
+    }
+    .infos3{
+        margin-top: 20px;
+    }
+    .infos4{
+        margin-top: 20px;
+    }
+    /* footer */
+    .footer{
+        width: 100%;
+        height: 120vh;
+        background-color:#56597A ;
+        display: flex;
+        flex-direction: column;
+    }
+    .footerone{
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        background-color: #56597A;
+        transform: translate(0px, 20px);
+        flex-direction: column;
+    }
+    .sous1{
+        width: 30%;
+        height: 25vh;
+        width: 300px;
+    }
+    
+    .sous1 p{
+        padding: 10px;
+        font-size: 17px;
+        color: white;
+        font-weight: 200;
+    }
+    .sous2{
+        width: 70%;
+        height: 30vh;
+        margin-left: 30px;
+    }
+    .sous2 h6{
+        color: #F78A22;
+        font-size: 20px;
+        font-weight: 650;
+        transform: translate(10px, 20px);
+    }
+    .sous2 p{
+        font-size: 17px;
+        transform: translate(0px, 30px);
+        margin: 10px;
+        color: white;
+        font-weight: 200;
+    }
+    .sous3{
+        width: 50%;
+        height: 30vh;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+    .sous3 h6{
+        color: #F78A22;
+        font-size: 20px;
+        font-weight: 650;
+        transform: translate(10px, 10px);
+    }
+    .sous3 p{
+        font-size: 17px;
+        transform: translate(10px, 20px);
+        margin: 10px;
+        color: white;
+        font-weight: 200;
+    }
+    .sous4{
+        width: 60%;
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 20px;
+    }
+    .sous44{
+        display: flex;
+        width: 400px;
+        height: 70px;
+        justify-content: space-around;
+        transform: translate(15px, 0px);
+    }
+    .rondbas{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        background-color: #676B92;
+        transform: translate(0px, 73px);
+    }
+    .footertwo{
+        width: 98%;
+        height: 10vh;
+        transform: translate(20px, 20px);
+        border: 1px solid white;
+        border: red;
+    }
+    .ligne{
+        width: 270px;
+        height: 1px;
+        background-color: white;
+        margin-top: 450px;
+        margin-left: 10px;
+    }
+    .textfin{
+        display: flex;
+        justify-content: space-around;
+        width: 1300px;
+        height: 55px;
+    }
+    .tous p{
+        height: 50px;
+        transform: translate(-115px, 10px);
+        color: white;
+        font-weight: 150;
+        font-size: 13px;
+        width: 300px;
+    }
+    .tous{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .terms{
+        width: 400px;
+        height: 30px;
+        transform: translate(120px, 20px);
+        display: flex;
+        justify-content: space-around;
+    }
+    .terms p{
+        color: white;
+        font-weight: 200;
+    }
 }
