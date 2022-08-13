@@ -5,6 +5,9 @@
     margin: 0;
 }
 
+html,body{
+    overflow-x: hidden;
+}
 /* les grands blocs */
 section{
     width: 100%;
@@ -48,6 +51,10 @@ h6{
     border-bottom-right-radius: 40px;
 }
 
+.deuxieme{
+    display: flex;
+    width: 100%;
+}
 .cerclerez{
     width: 50px;
     height: 50px;
@@ -198,6 +205,7 @@ a:hover{
     transform: translate(0px, 30px);
     border-radius: 5px;
 }
+
 
 /* bloc stratégie */
 
@@ -1001,6 +1009,7 @@ form{
     opacity: 0.7;
     border-radius: 100%;
     transform: translate(765px, -350px);
+    display: none;
 }
 
 /* footer */
@@ -1084,27 +1093,30 @@ form{
     transform: translate(0px, 73px);
 }
 .footertwo{
-    width: 98%;
-    height: 10vh;
-    transform: translate(20px, 20px);
+    width: 100%;
+    height: 30vh;
+    transform: translate(0px, 20px);
     border: 1px solid white;
     border: red;
+    
 }
 .ligne{
-    width: 1270px;
-    height: 1px;
+    width: 1200px;
+    height: 2px;
     background-color: white;
+    margin-left: 35px;
 }
 .textfin{
     display: flex;
     justify-content: space-around;
-    width: 1300px;
+    width: 1180px;
     height: 55px;
+    margin-left: 50px;
 }
 .tous p{
     width: 400px;
     height: 30px;
-    transform: translate(-125px, 20px);
+    transform: translate(-100px, 20px);
     color: white;
     font-weight: 200;
 }
@@ -1137,11 +1149,23 @@ form{
     }
 }
 
+
+/* @media screen  and (max-width:998px ){
+    body{
+    }
+    .premier{
+        width: 100%;
+    }
+    .quatrieme{
+        display: none;
+    }
+} */
+
 @media screen and (max-width:600px) {
     
     .premier{
         background-image:url(./images/pattern.png);
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 0px;
@@ -1151,9 +1175,9 @@ form{
         display: flex;
         flex-direction: column-reverse;
     }
-
+    
     header{
-        width: 100vw;
+        width: 100%;
         height:10vh ;
     }
     
@@ -1171,33 +1195,30 @@ form{
         display: none;
     }
     .devis .translate{
-        transform: translate(20px, 8px);
+        transform: translate(20px, 30px);
     }
     .Logo {
         width: 130px;
         height: 70px;
-        transform: translate(-40px,15px);
+        transform: translate(-30px,30px);
     }
     .nwmenu{
         width: 100px;
         height: 50px;
-        transform: translate(25px, 0px);
+        transform: translate(25px, 30px);
     }
     .nwmenu .iconify{
         width: 80px;
         height: 60px;
     }
-    .textacc .p3{
-        transform: translate(190px,-40px);
-        width: 80px;
-    }
+    
     .devis a{
         transform: translate(-50px, -10px);
         font-size: 12px;
     }
 
     .item{
-        width:290px ;
+        width:270px ;
         height: 30vh;
         transform: translate(40px, -100px);
     }
@@ -1210,7 +1231,7 @@ form{
 
     .textacc h6{
         font-size: 17px;
-        transform: translate(0px, -70px);
+        transform: translate(0px, -40px);
         color: #f78a22;
         font-weight: 300;
     }
@@ -1218,32 +1239,56 @@ form{
     .textacc h1{
         font-size: 28px;
         width:250px;
-        transform: translate(0px, -65px);
+        transform: translate(0px, -35px);
     }
 
     .textacc p{
         font-size: 12px ;
-        transform: translate(0px, -50px);
+        transform: translate(0px, -30px);
     }
     .p2{
         display: none;
     }
+    
+    .textacc .p3{
+        transform: translate(200px, -50px);
+        width: 100px;
+        height: 50px;
+        margin: 0;
+    }
+    .playing{
+        transform: translate(30px, -25px);
+    }
+    .textacc button{
+        width:110px ;
+        height: 5vh;
+        background-color: #E02780;
+        border: none;
+        color: white;
+        font-size: 10px;
+        text-align: center;
+        transform: translate(0px, 0px);
+        border-radius: 5px;
+    }
+    
 
     /* media strategie */
 
     .deuxieme{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        height: 125vh;
     }
 
     .imgstrategieone img{
-        width: 370px;
+        width: 300px;
         height: 270px;
-        transform: translate(-0px, 0px);
+        transform: translate(35px, 0px);
     }
 
     .textstrategie h6{
-        transform: translate(0px, -137px);
+        transform: translate(20px, -470px);
         font-size: 28px;
         font-weight: 300;
         padding: 15px;
@@ -1252,14 +1297,14 @@ form{
 
     .textstrategie h1{
         font-size: 40px;
-        transform: translate(0px, -160px);
+        transform: translate(10px, -500px);
         padding: 15px;
         width: 70%;
     }
 
     .textstrategie{
         width: 100%;
-        height: 110vh;
+        height: 0vh;
         transform: translate(-20px, 0px);
     }
 
@@ -1270,22 +1315,22 @@ form{
     .paraph2{
         width: 78%;
         height: 20vh;
-        transform: translate(15px, -135px);
+        transform: translate(30px, -480px);
     }
 
     .paraph2 p{
         font-size: 21px;
-        margin: 10px;
+        margin: 20px;
+        
     }
 
     /* service */
 
     .troisieme{
         width: 100vw;
-        height: 150vh;
+        height: 170vh;
         display: flex;
         flex-direction: column;
-        margin-top: 120px;
     }
 
     .textservices{
@@ -1304,52 +1349,63 @@ form{
     }
 
     .first h6{
-        font-size: 25px;
+        font-size: 20px;
         width: 250px;
         height: 50px;
         color: #F78A22;
-        transform: translate(10px, 12px);
+        transform: translate(40px, 12px);
     }
 
     .first h1{
         font-size: 40px;
-        transform: translate(10px,10px);
+        transform: translate(30px,10px);
     }
 
     .second h6{
         width: 220px;
         font-size: 16px;
-        transform: translate(-50px, -45px);
+        transform: translate(-30px, -45px);
     }
     .services{
         width: 80%;
-        height: 60vh;
+        height: 120vh;
         display: flex;
         flex-direction: column;
-        margin-top: 70px;
+        margin-top: 120px;
     }
 
     .three{
-        width: 5%;
-        height: 50vh;
+        width: 92%;
+        height: 60vh;
         background-color: white;
+    }
+
+    .three:hover{
+        background-color: white;
+        box-shadow: 0px 24px 48px;
+        border-radius: 16px;
     }
 
     .anay{
         width:65px ;
         height: 65px;
-        transform: translate(30px, 25px);
+        transform: translate(30px, 30px);
     }
 
     .four{
-        width: 5%;
-        height: 20vh;
+        width: 92%;
+        height: 60vh;
         background-color: white;
+    }
+    .four:hover{
+        background-color: white;
+        box-shadow: 0px 24px 48px;
+        border-radius: 16px;
     }
 
     .five{
-        width: 5%;
-        height: 20vh;
+        width: 92%;
+        height: 60vh;
         background-color: white;
     }
 
@@ -1357,17 +1413,17 @@ form{
         display: flex;
         height: 120px;
         width: 120px;
-        transform: translate(-43px, 45px);
+        transform: translate(-43px, -40px);
     }
 
     .circlethree p{
-        transform: translate(0px, 100px);
+        transform: translate(0px, 75px);
         font-size: 16px;
     }
     .circlethree .p1{
         width:250px;
         height: 50vh;
-        transform: translate(0px, 100px);
+        transform: translate(0px, 80px);
         font-size:14px ;
     }
     
@@ -1375,18 +1431,18 @@ form{
         display: flex;
         height: 120px;
         width: 120px;
-        transform: translate(-43px, 90px);
+        transform: translate(-43px, -60px);
     }
 
     .circlefour p{
-        transform: translate(0px, 95px);
+        transform: translate(0px, 75px);
         font-size: 16px;
         font-weight: bold;
     }
     .circlefour .p1{
         width:250px;
         height: 50vh;
-        transform: translate(0px, 100px);
+        transform: translate(0px, 85px);
         font-size:14px ;
     }
 
@@ -1400,17 +1456,17 @@ form{
         display: flex;
         height: 120px;
         width: 120px;
-        transform: translate(-43px, 230px);
+        transform: translate(-43px, -65px);
     }
     .circlefive .p1{
         width:250px;
         height: 50vh;
-        transform: translate(0px, 110px);
+        transform: translate(0px, 90px);
         font-size:14px ;
     }
     .circlefive p{
         font-size: 16px;
-        transform: translate(0px,100px);
+        transform: translate(0px,80px);
     }
 
     .web{
@@ -1427,59 +1483,80 @@ form{
 
     /* autres services */
     .quatrieme{
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 110vh;
         display: flex;
     }
     .quatrieme .title{
         display: none;
     }
     .traffic{
-        width: 45vw;
+        width: 50vw;
         height: 100vh;
         transform: translate(0px, 0px);
         display: flex;
         flex-direction: column;
     }
-     
+    .trafficun{
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        border: blue solid 3px;
+        transform: translate(20px, 10px)
+    }
+    
+    .trafficun img{
+        transform: translate(20px, 20px);
+    }
+    
     .texttrafficun p{
-        width: 100px;
-        height: 80px;
         transform: translate(30px, 0px);
+        width: 200px;
     }
     
     .texttrafficun h6{
-        font-size: 20px;
+        transform: translate(0px,-5px);
+        width: 3px;
+        height: 5px;
         color: black;
-        transform: translate(0px, -5px);
+        font-weight: bold;
+        background-color: transparent;
+        font-size: 20px;
     }
+    
     .trafficdeux{
-        transform: translate(25px,45px);
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        border: orange solid 3px;
+        transform: translate(20px, 50px)
     }
+    
     .trafficdeux img{
         transform: translate(25px, 18px);
     }
     
     .texttrafficdeux p{
-        transform: translate(30px, 30px);
-        width: 100px;
+        transform: translate(30px, 35px);
+        width: 200px;
     }
     
     .texttrafficdeux h6{
+        transform: translate(0px,35px);
         width: 30px;
         height: 5px;
         color: black;
         font-weight: bold;
-        background-color: transparent ;
+        background-color: transparent;
         font-size: 20px;
-        transform: translate(0px,25px);
     }
+    
     .traffictrois{
         width: 70px;
         height: 70px;
         border-radius: 100%;
         border: purple solid 3px;
-        transform: translate(20px, 60px)
+        transform: translate(25px, 80px)
     }
     
     .traffictrois img{
@@ -1487,104 +1564,109 @@ form{
     }
     
     .texttraffictrois p{
-        transform: translate(30px, 40px);
-        width: 100px;
+        transform: translate(35px, 65px);
+        width: 200px;
     }
     
     .texttraffictrois h6{
+        transform: translate(0px,60px);
         width: 30px;
         height: 5px;
         color: black;
         font-weight: bold;
+        background-color: transparent;
         font-size: 20px;
-        transform: translate(-5px,40px);
     }
     
     .clients{
-        width: 55vw;
+        width: 50vw;
         height: 100vh;
         transform: translate(0px, 0px);
         display: flex;
         flex-direction: column;
     }
-    .clientsun{
-        width: 70px;
-        height: 70px;
-        border-radius: 100%;
-        border: blue solid 3px;
-        transform: translate(35px, 15px)
-    }
     
-    .clientsun img{
-        transform: translate(20px, 20px);
-    }
-    
-    .textclientsun p{
-        transform: translate(20px, 0px);
-        width: 100px;
-    }
-    
-    .textclientsun h6{
-        transform: translate(-12px,0px);
-        width: 30px;
-        height: 5px;
-        color: black;
-        font-weight: bold;
-        font-size: 20px;
-    } 
+.clientsun{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: orange solid 3px;
+    transform: translate(20px,13px)
+}
 
-    .clientsdeux{
-        width: 70px;
-        height: 70px;
-        border-radius: 100%;
-        border: blue solid 3px;
-        transform: translate(30px, 20px)
-    }
+.clientsun img{
+    transform: translate(22px, 20px);
+}
+
+.textclientsun p{
+    transform: translate(20px, 0px);
+    width: 200px;
+}
+
+.textclientsun h6{
+    transform: translate(-10px,-5px);
+    width: 30px;
+    height: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.clientsdeux{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: blue solid 3px;
+    transform: translate(20px, 50px)
+}
+
+.clientsdeux img{
+    transform: translate(20px, 20px);
+}
+
+.textclientsdeux p{
+    transform: translate(25px, 35px);
+    width: 200px;
+}
+
+.textclientsdeux h6{
+    transform: translate(-5px,35px);
+    width: 30px;
+    height: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.clientstrois{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: orange solid 3px;
+    transform: translate(20px, 80px)
+}
+
+.clientstrois img{
+    transform: translate(20px, 20px);
+}
+
+.textclientstrois p{
+    transform: translate(20px, 65px);
+    width: 200px;
+}
+
+.textclientstrois h6{
+    transform: translate(-10px,60px);
+    width: 30px;
+    height: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 20px;
+}
     
-    .clientsdeux img{
-        transform: translate(20px, 20px);
-    }
-    
-    .textclientsdeux p{
-        transform: translate(20px, 0px);
-        width: 100px;
-    }
-    
-    .textclientsdeux h6{
-        transform: translate(-10px,-2px);
-        width: 30px;
-        height: 5px;
-        color: black;
-        font-weight: bold;
-        background-color: transparent;
-        font-size: 20px;
-    }
-    .clientstrois{
-        width: 70px;
-        height: 70px;
-        border-radius: 100%;
-        border: orange solid 3px;
-        transform: translate(20px, 35px)
-    }
-    
-    .clientstrois img{
-        transform: translate(20px, 15px);
-    }
-    
-    .textclientstrois p{
-        transform: translate(30px, 15px);
-        width: 100px;
-    }
-    
-    .textclientstrois h6{
-        transform: translate(0px,15px);
-        width: 30px;
-        height: 5px;
-        color: black;
-        font-weight: bold;
-        background-color: transparent;
-        font-size: 20px;
-    }
     /* missions */
     .cinquieme{
         width: 100vw;
@@ -1615,14 +1697,16 @@ form{
         margin-top: 20px;
     }
     .textmission p{
-        margin-top: 20px;
+        margin-top: 15px;
+        width: 300px;
+        height: 250px;
     }
     
     .directeur{
-        width: 55%;
+        width: 70%;
         height: 30vh;
         background-color: #DDDFEB;
-        border-radius: 25px;
+        border-radius: 40px;
         margin-left: 25px;
     }
 
@@ -1635,17 +1719,18 @@ form{
     }
 
     video{
-    width: 230px;
+    width: 240px;
     height: 30vh;
     border-radius: 20px;
-    transform: translate(-82px, -30px);
+    transform: translate(-40px, -20px);
     }
     /* projects */
 
     .sixieme{
         width: 100vw;
-        height: 80vh;
-        margin-left: 0px;
+        height: 100vh;
+        border-bottom-right-radius: 0px;
+        margin-left: 0;
     }
     .textseo{
         width: 200px;
@@ -1663,6 +1748,7 @@ form{
         width: 300px;
         height: 300px;
         margin-top: 20px;
+        margin-left: 45px;
     }
     .seo2{
         display: none;
@@ -1684,7 +1770,7 @@ form{
     .badges{
         width: 80%;
         height: 15vh;
-        transform: translate(145px, 10px);
+        transform: translate(145px, 50px);
         display: flex;
         justify-content: space-around;
         padding: 10px;
@@ -1697,18 +1783,23 @@ form{
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
+        margin-top: 50px;
+        margin-left: 25px;
+    }
+    .mob2 img{
+        transform: translate(0px, 20px);
     }
     /* Témoignages */
     .septieme{
         width: 100vw;
-        height: 80vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
     }
     .ind{
         width: 100vw;
         height: 40vh;
-        transform: translate(0px, 0px);
+        transform: translate(00px, 10px);
         text-align: center;
     }
     
@@ -1729,21 +1820,21 @@ form{
     
     .textind h6{
         color: #F78A22;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 450;
-        transform: translate(-100px, -400px);
+        transform: translate(-100px, -350px);
     }
     
     .textind h1{
         color: black;
         font-size: 45px;
         font-weight: bold;
-        transform: translate(-110px,-110px);
+        transform: translate(-110px,-50px);
         width: 330px;
     }
     
     .textind p{
-        transform: translate(-110px, -100px);
+        transform: translate(-110px, -45px);
         font-size: 20px;
         width: 290px;
     }
@@ -1759,17 +1850,17 @@ form{
     /* abonnement */
     .huitieme{
         width: 100vw;
-        height: 50vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
     }
     
     .barre{
         width: 75%;
-        height: 40vh;
+        height: 55vh;
         background-color: #ECEDF3;
         border-radius: 20px;
-        margin-right: 10px;
+        
     }
     
     .ab{
@@ -1831,7 +1922,7 @@ form{
         justify-content: center;
         align-items: center;
         width: 100vw;
-        height: 100vh;
+        height: 110vh;
     }
     
     form{
@@ -1839,14 +1930,14 @@ form{
         height: 85%;
         background-color: white;
         border-radius: 25px;
-        margin-right: 30px;
+        margin-left: 15x;
     }
     
     .textform{
-        width:60% ;
+        width:40% ;
         height: 15vh;
         text-align: center;
-        transform: translate(140px, 20px);
+        transform: translate(130px, 20px);
     }
     
     .textform h6{
@@ -1874,7 +1965,7 @@ form{
         width:70% ;
         height: 20vh;
         text-align: center;
-        transform: translate(120px, 60px);
+        transform: translate(110px, 60px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1916,7 +2007,7 @@ form{
     .go{
         width:70% ;
         height: 35vh;
-        transform: translate(100px, 80px);
+        margin-right: 0;
     }
     
     .goone p{
@@ -1926,7 +2017,7 @@ form{
     .goone input{
         width: 250px;
         height: 17vh;
-        transform: translate(-80px, 110px);
+        transform: translate(-90px, 130px);
         border-radius: 9px;
         border: gray solid 1px;
     }
@@ -1937,7 +2028,7 @@ form{
         background-color: #E02780;
         border: none;
         border-radius: 7px;
-        transform: translate(-25px, 135px);
+        transform: translate(-25px, 145px);
     }
     
     .go button a{
@@ -1970,7 +2061,7 @@ form{
     .footer{
         width: 100%;
         height: 120vh;
-        background-color:#56597A ;
+        background-color:#56597A;
         display: flex;
         flex-direction: column;
     }
@@ -2053,48 +2144,42 @@ form{
         transform: translate(0px, 73px);
     }
     .footertwo{
-        width: 98%;
-        height: 10vh;
-        transform: translate(20px, 20px);
+        width: 100%;
+        height: 30vh;
+        transform: translate(0px, 520px);
         border: 1px solid white;
-        border: red;
+        background-color:#56597A;
+        display: flex;
+        flex-direction: column;
     }
     .ligne{
-        width: 270px;
+        width: 340px;
         height: 1px;
         background-color: white;
-        margin-top: 450px;
         margin-left: 10px;
     }
     .textfin{
         display: flex;
         justify-content: space-around;
-        width: 1300px;
-        height: 55px;
+        width: 300px;
+        height: 155px;
+        background-color:#56597A;
+        flex-direction: column;
+    }
+
+    .tous{
+    width: 300px;
+    height: 20vh;
     }
     .tous p{
-        height: 50px;
-        transform: translate(-115px, 10px);
-        color: white;
-        font-weight: 150;
-        font-size: 13px;
-        width: 300px;
-    }
-    .tous{
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .terms{
         width: 400px;
         height: 30px;
-        transform: translate(120px, 20px);
-        display: flex;
-        justify-content: space-around;
-    }
-    .terms p{
+        transform: translate(0px, 20px);
         color: white;
         font-weight: 200;
     }
+    .terms{
+        display: none;
+    }
+    
 }
