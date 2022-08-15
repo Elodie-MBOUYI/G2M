@@ -275,21 +275,26 @@ a:hover{
 }
 
 .p2{
-    transform: translate(180px, -38px);
+    transform: translate(200px, -38px);
+}
+.playing{
+    width:160px ;
+    height:50px ;
+    margin-left: 160px;
 }
 
-.hola button{
-    width:110px ;
-    height: 5vh;
+.hola{
+    width:140px ;
+    height: 6vh;
     background-color: #E02780;
     border: none;
-    color: white;
-    font-size: 10px;
-    text-align: center;
-    transform: translate(0px, 30px);
+    transform: translate(0px, 45px);
     border-radius: 5px;
 }
 
+.hola a{
+    font-size: 12px;
+}
 
 /* bloc stratégie */
 
@@ -1342,14 +1347,26 @@ form{
     }
     
     .textacc .p3{
-        transform: translate(200px, -55px);
+        transform: translate(180px, -75px);
         width: 100px;
         height: 50px;
         margin: 0;
     }
-    .playing{
-        transform: translate(30px, -30px);
+    .hola{
+        width:110px ;
+        height: 5vh;
+        background-color: #E02780;
+        border: none;
+        transform: translate(0px, 0px);
+        border-radius: 5px;
     }
+    .hola a{
+        font-size: 10px;
+    }
+    .playing{
+        transform: translate(-20px, -50px);
+    }
+    
    
     /* media strategie */
 
@@ -1367,7 +1384,7 @@ form{
     }
 
     .textstrategie h6{
-        transform: translate(20px, -470px);
+        transform: translate(40px, -170px);
         font-size: 28px;
         font-weight: 300;
         padding: 15px;
@@ -1376,14 +1393,14 @@ form{
 
     .textstrategie h1{
         font-size: 40px;
-        transform: translate(10px, -500px);
+        transform: translate(40px, -200px);
         padding: 15px;
         width: 70%;
     }
 
     .textstrategie{
         width: 100%;
-        height: 0vh;
+        height: 70vh;
         transform: translate(-20px, 0px);
     }
 
@@ -1394,13 +1411,12 @@ form{
     .paraph2{
         width: 78%;
         height: 20vh;
-        transform: translate(20px, -500px);
-        margin: 20px;
+        transform: translate(20px, -220px);
+        margin: 30px;
     }
 
     .paraph2 p{
         font-size: 21px;
-        margin: 20px;
     }
 
     /* service */
