@@ -106,7 +106,7 @@ select{
     width: 70px;
     height: 40px;
     padding:2px 5px;
-    text-align: center;
+    
     letter-spacing: 0.5px;
     cursor: pointer;
     background-color: transparent;
@@ -164,6 +164,7 @@ a:hover{
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 #toggle::before
@@ -197,7 +198,7 @@ a:hover{
 #sidebar{
     position: fixed;
     width:30%;
-    height: 34vh;
+    height: 30vh;
     left: -400px;
     background-color: #E02780;
     transform: translate(250px, 100px);
@@ -1043,14 +1044,14 @@ form{
     border: gray solid 1px;
     padding: 8px;
 }
-.infos4 select{
-    width: 270px;
+.infos4 #choix{
+    width: 255px;
     height: 43px;
     border-radius: 9px;
     border: gray solid 1px;
     padding: 8px;
     color: gray;
-   transform: translate(-145px, 85px);
+   transform: translate(-140px, 85px);
 }
 
 .infos3 {
@@ -1964,14 +1965,14 @@ form{
         color: #F78A22;
         font-size: 25px;
         font-weight: 450;
-        transform: translate(40px, -300px);
+        transform: translate(40px, -350px);
     }
     
     .textind h1{
         color: black;
         font-size: 45px;
         font-weight: bold;
-        transform: translate(45px,10px);
+        transform: translate(45px,-30px);
         width: 330px;
     }
     
@@ -2125,18 +2126,20 @@ form{
         padding: 8px;
         transform: translate(-100px, 0px);
     }
-    .infos4 select{
+    .infos4 #choix{
         width: 255px;
         height: 43px;
         border-radius: 9px;
         border: gray solid 1px;
         padding: 8px;
         color: gray;
-        transform: translate(-200px, 210px);
+       transform: translate(-200px, 210px);
     }
+    
     .infos3 input{
         transform: translate(-80px, 0px);
     }
+   
     .personne{
         display: flex;
         justify-content: space-around;
