@@ -197,7 +197,7 @@ a:hover{
 #sidebar{
     position: fixed;
     width:30%;
-    height: 35vh;
+    height: 34vh;
     left: -400px;
     background-color: #E02780;
     transform: translate(250px, 100px);
@@ -543,13 +543,6 @@ a:hover{
     transform: translate(40px, 10px);
     width: 200px;
 }
-.biip{
-    display: none;
-}
-.biiip{
-    display: none;
-}
-
 .texttrafficun h6{
     transform: translate(10px,13px);
     width: 3px;
@@ -577,6 +570,9 @@ a:hover{
     width: 200px;
 }
 
+.ayo{
+    width: 200px;
+}
 .texttrafficdeux h6{
     transform: translate(220px,15px);
     width: 30px;
@@ -599,11 +595,13 @@ a:hover{
     transform: translate(20px, 20px);
 }
 
-.texttraffictrois p{
+.biiip{
     transform: translate(390px, 20px);
     width: 200px;
 }
-
+.booop{
+    width: 200px;
+}
 .texttraffictrois h6{
     transform: translate(360px,18px);
     width: 30px;
@@ -633,11 +631,13 @@ a:hover{
     transform: translate(20px, 20px);
 }
 
-.textclientsun p{
+.bal{
     transform: translate(40px, 40px);
     width: 200px;
 }
-
+.balo{
+    width: 200px;
+}
 .textclientsun h6{
     transform: translate(10px,40px);
     width: 30px;
@@ -660,11 +660,13 @@ a:hover{
     transform: translate(20px, 20px);
 }
 
-.textclientsdeux p{
+.bil{
     transform: translate(250px, 35px);
     width: 200px;
 }
-
+.bili{
+    width: 200px;
+}
 .textclientsdeux h6{
     transform: translate(220px,40px);
     width: 30px;
@@ -687,12 +689,9 @@ a:hover{
 .clientstrois img{
     transform: translate(20px, 20px);
 }
-
-.textclientstrois p{
-    transform: translate(390px, 40px);
-    width: 200px;
+.bolo{
+   width: 200px;
 }
-
 .textclientstrois h6{
     transform: translate(360px,40px);
     width: 30px;
@@ -1051,9 +1050,17 @@ form{
     border: gray solid 1px;
     padding: 8px;
     color: gray;
+   transform: translate(-145px, 85px);
 }
 
-
+.infos3 {
+    width: 100px;
+    height: 50px;
+    transform: translate(-100px, 3px);
+}
+.infos3 p{
+    transform: translate(-20px, 0px);
+}
 .personne{
     display: flex;
     justify-content: space-around;
@@ -1251,9 +1258,24 @@ form{
     }
    .bop{
     display: none;}
+
+    .ayo{
+        display: none;
+    }
+    .booop{
+        display: none;
+    }
+    .balo{
+        display: none;
+    }
+    .bili{
+        display: none;
+    }
+    .bolo{
+        display: none;
+    }
 }
-
-
+    
 /* @media screen  and (max-width:998px ){
     body{
     }
@@ -1392,7 +1414,7 @@ form{
     }
 
     .textstrategie h6{
-        transform: translate(40px, -170px);
+        transform: translate(35px, -170px);
         font-size: 28px;
         font-weight: 300;
         padding: 15px;
@@ -1401,7 +1423,7 @@ form{
 
     .textstrategie h1{
         font-size: 40px;
-        transform: translate(40px, -200px);
+        transform: translate(35px, -200px);
         padding: 15px;
         width: 70%;
     }
@@ -1419,7 +1441,7 @@ form{
     .paraph2{
         width: 78%;
         height: 20vh;
-        transform: translate(20px, -220px);
+        transform: translate(10px, -220px);
         margin: 40px;
     }
 
@@ -1456,7 +1478,7 @@ form{
         width: 250px;
         height: 50px;
         color: #F78A22;
-        transform: translate(40px, 12px);
+        transform: translate(30px, 12px);
     }
 
     .first h1{
@@ -1589,7 +1611,7 @@ form{
     /* autres services */
     .quatrieme{
         width: 100%;
-        height: 110vh;
+        height: 120vh;
         display: flex;
     }
     .quatrieme .title{
@@ -1597,7 +1619,7 @@ form{
     }
     .traffic{
         width: 50vw;
-        height: 100vh;
+        height: 120vh;
         transform: translate(0px, 0px);
         display: flex;
         flex-direction: column;
@@ -1617,14 +1639,13 @@ form{
     .bip{
         display: none;
     }
-    p .bop{
+    .bop{
         transform: translate(30px, 0px);
-        width: 50vw;
-        height: 40vh;
-        background-color: red;
+        width: 35vw;
+        height: 15vh;
     }
     .texttrafficun h6{
-        transform: translate(0px,-5px);
+        transform: translate(0px,0px);
         width: 3px;
         height: 5px;
         color: black;
@@ -1632,7 +1653,14 @@ form{
         background-color: transparent;
         font-size: 20px;
     }
-    
+    .biip{
+        display: none;
+    }
+    .ayo{
+       transform: translate(20px, 40px);
+       width: 35vw;
+       height: 15vh;
+    }
     .trafficdeux{
         width: 70px;
         height: 70px;
@@ -1645,13 +1673,8 @@ form{
         transform: translate(25px, 18px);
     }
     
-    .texttrafficdeux p{
-        transform: translate(30px, 35px);
-        width: 200px;
-    }
-    
     .texttrafficdeux h6{
-        transform: translate(0px,35px);
+        transform: translate(-10px,35px);
         width: 30px;
         height: 5px;
         color: black;
@@ -1671,12 +1694,11 @@ form{
     .traffictrois img{
         transform: translate(20px, 20px);
     }
-    
-    .texttraffictrois p{
-        transform: translate(35px, 65px);
-        width: 200px;
+    .booop{
+        transform: translate(30px, 15px);
+        width: 35vw;
+        height: 15vh;
     }
-    
     .texttraffictrois h6{
         transform: translate(0px,60px);
         width: 30px;
@@ -1687,13 +1709,13 @@ form{
         font-size: 20px;
     }
     
-    .clients{
-        width: 50vw;
-        height: 100vh;
-        transform: translate(0px, 0px);
-        display: flex;
-        flex-direction: column;
-    }
+.clients{
+    width: 50vw;
+    height: 120vh;
+    transform: translate(0px, 0px);
+    display: flex;
+    flex-direction: column;
+}
     
 .clientsun{
     width: 70px;
@@ -1707,9 +1729,13 @@ form{
     transform: translate(22px, 20px);
 }
 
-.textclientsun p{
-    transform: translate(20px, 0px);
-    width: 200px;
+.bal{
+    display: none;
+}
+.balo{
+    transform: translate(20px,0px);
+    width: 35vw;
+    height: 15vh;
 }
 
 .textclientsun h6{
@@ -1733,10 +1759,13 @@ form{
 .clientsdeux img{
     transform: translate(20px, 20px);
 }
-
-.textclientsdeux p{
-    transform: translate(25px, 35px);
-    width: 200px;
+.bili{
+    width: 35vw;
+    height: 12vh;
+    transform: translate(20px, 40px);
+}
+.bil{
+    display: none;
 }
 
 .textclientsdeux h6{
@@ -1754,20 +1783,23 @@ form{
     height: 70px;
     border-radius: 100%;
     border: orange solid 3px;
-    transform: translate(20px, 80px)
+    transform: translate(20px, 100px)
 }
 
 .clientstrois img{
     transform: translate(20px, 20px);
 }
 
-.textclientstrois p{
-    transform: translate(20px, 65px);
-    width: 200px;
+.bol{
+   display: none;
 }
-
+.bolo{
+    width: 35vw;
+    height: 12vh;
+    transform: translate(20px, 90px);
+}
 .textclientstrois h6{
-    transform: translate(-10px,60px);
+    transform: translate(-10px,80px);
     width: 30px;
     height: 5px;
     color: black;
@@ -1909,7 +1941,7 @@ form{
     .ind{
         width: 100vw;
         height: 40vh;
-        transform: translate(00px, 10px);
+        transform: translate(0px, 50px);
         text-align: center;
     }
     
@@ -1932,19 +1964,19 @@ form{
         color: #F78A22;
         font-size: 25px;
         font-weight: 450;
-        transform: translate(40px, -320px);
+        transform: translate(40px, -300px);
     }
     
     .textind h1{
         color: black;
         font-size: 45px;
         font-weight: bold;
-        transform: translate(50px,-50px);
+        transform: translate(45px,10px);
         width: 330px;
     }
     
     .textind p{
-        transform: translate(55px, -25px);
+        transform: translate(45px, 25px);
         font-size: 20px;
         width: 290px;
     }
@@ -2100,9 +2132,11 @@ form{
         border: gray solid 1px;
         padding: 8px;
         color: gray;
-        transform: translate(-100px, 0px);
+        transform: translate(-200px, 210px);
     }
-    
+    .infos3 input{
+        transform: translate(-80px, 0px);
+    }
     .personne{
         display: flex;
         justify-content: space-around;
@@ -2163,6 +2197,7 @@ form{
     }
     .infos3{
         margin-top: 20px;
+        transform: translate(-20px, 0px);
     }
     .infos4{
         margin-top: 20px;
