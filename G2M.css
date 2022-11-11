@@ -677,7 +677,10 @@ a:hover{
     background-color: transparent;
     font-size: 20px;
 }
-
+.bol{
+    transform: translate(390px, 35px);
+    width: 200px;
+}
 
 .clientstrois{
     width: 70px;
@@ -1083,8 +1086,8 @@ form{
     transform: translate(10px, 5px);
 }
 
-.goone input{
-    width: 97%;
+.goone textarea{
+    width: 98%;
     height: 20vh;
     transform: translate(10px, 10px);
     border-radius: 9px;
@@ -2161,7 +2164,7 @@ form{
         display: none;
     }
     
-    .goone input{
+    .goone textarea{
         width: 250px;
         height: 17vh;
         transform: translate(-90px, 130px);
@@ -2328,5 +2331,44 @@ form{
     .terms{
         display: none;
     }
-    
+    /* section cinq,formation */
+    .cinq{
+        width: 100vw;
+        height: 140vh;
+        background-color: pink;
+    }
+    .classes{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        height: 90vh;
+        transform: translate(140px, 70px);
+    }
+    .jobs{
+        width: 90%;
+        height: 25vh;
+        background-color: skyblue;
+    }
+    .jobs .oui{
+        width: 90px;
+        height: 3px;
+        background-color: #dc3545; 
+        transform: translate(483px,80px);
+    }
+    .jobs h5{
+        font-size: 20px;
+        font-family: 'Nunito Sans', sans-serif;
+        color: #dc3545;
+        text-align: center;
+        margin-top: 60px;
+        transform: translate(65px,0px);
+    }
+    .jobs h6{
+        font-size: 30px;
+        color: #200407;
+        text-align: center;
+       transform: translate(100px,50px);
+       font-weight: bold;
+        font-family: 'Handlee', cursive;
+    }
 }
